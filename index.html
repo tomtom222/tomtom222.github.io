@@ -28,14 +28,14 @@
 
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="#about">About Me <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#interest">Interests</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#contactform">Contact</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="#bottom">Contact</a>
@@ -83,40 +83,22 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <p>
-                                Hi there :)
+                                rewrite for easier reading and better flow(I am an experienced Technical assistant with a demonstrated ability of working in the electrical and electronic manufacturing industry. 
+                                Skilled in Autodesk Inventor, AutoCAD, Altium Designer. 
+                                Strong professional with a Bachelor of Aviation from Griffith University. 
+                                Currently studying a Bachelor of Engineering (Honours) Majoring in Computer Systems at USQ)
                             </p>
                             <p>
-                                I love building things.
-                                While hard engineering problems are often intrinsically fun to tackle,
-                                I'm most attracted to solving real customer problems with a business justification.
-                                I'm looking for a senior individual contributor role where I can take on on
-                                collaborative
-                                team leadership responsibilites, and gain experience with
-                                architecture and project management.
+                                add something interesting here
                             </p>
                         </div>
                         <div class="col-sm-6">
                             <h3 style="margin-top:0;">Highlights</h3>
                             <ul>
                                 <li>
-                                    Migrated a monolithic Heroku Ruby on Rails API to multiple Scala
-                                    services hosted on AWS. Delivered ahead of schedule, projected to save
-                                    $18k/quarter.
+                                    Talk about projects/ maybe tile in some pics here of pcbs
                                 </li>
-                                <li>
-                                    Presented research and proof-of-concept to convince team to move from Hadoop MR to
-                                    Spark; reduced nodes by 60% and ran 5-8x faster.
-                                <li>
-                                    Automated test automation in ramp-up to large data center migration, saving
-                                    hundreds of
-                                    developer hours.
-                                <li>
-                                    Presented "Understanding the GIL to Prevent Race Conditions" at RubyConf 2016.
-                                </li>
-                                <li>
-                                    Awarded patent for novel approach to item normalization in 3rd party catalog data
-                                    feeds.
-                                </li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -141,16 +123,7 @@
                                     <b>Deep learning</b>. It's an exciting time for machine learning. I'm working
                                     through several online classes, and swap articles with collegues.
                                 </li>
-                                <li>
-                                    <b>RC Planes and Boats</b>. I've been an enthusiastic hobbiest since I was a
-                                    teenager - but only as an adult am I able to afford the higher-quality
-                                    devices. I like to modify existing kits to improve speed, and add instrumentation.
-                                </li>
-                                <li>
-                                    <b>Mountaineering</b>. I live in the Pacific Northwest, home of some of the
-                                    greatest mountains and trails in the country. I enjoy spending weekends
-                                    on scrambles and getting lost in the woods.
-                                </li>
+                                
                             </ul>
                         </div>
                         <div class="col-sm-6">
@@ -192,13 +165,23 @@
                     <div class="row">
                         <div class="col-lg-12 ">
                             <form id="contactform" method="POST">
-                                <input type="text" name="name" placeholder="Your name">
-                                <input type="email" name="_replyto" placeholder="Your email">
+                                <div class="form-group">
+                                    <label for="exampleTextarea">Your Name:</label>
+                                    <input type="text" class="form-control" name="name" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleTextarea">Your Email:</label>
+                                    <input type="email" class="form-control" name="_replyto" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleTextarea">Message</label>
+                                    <textarea class="form-control" id="exampleTextarea"  name="message" rows="3" placeholder="Enter message for Thomas"></textarea>
+                                </div>
                                 <input type="hidden" name="_subject" value="Website contact" />
-                                <textarea name="message" placeholder="Your message"></textarea>
                                 <input type="text" name="_gotcha" style="display:none" />
                                 <input type="submit" value="Send">
                             </form>
+                            <hr/>
                             <script>
                                 var contactform =  document.getElementById('contactform');
                                 contactform.setAttribute('action', '//formspree.io/' + 'thomas_loch' + '@' + 'hotmail' + '.' + 'com');
@@ -210,12 +193,12 @@
 
         </div>
     </div>
-    <footer class="text-center navbar-dark bg-primary">
+    <footer class="text-center bg-primary">
         <div class="footer-below">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Thomas Loch 2018
+                    <div class="col-lg-12 ">
+                        <p class="text-white">Thomas Loch 2018</p>
                     </div>
                 </div>
             </div>
